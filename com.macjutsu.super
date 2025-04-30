@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>JamfProID</key>
+<string>$JSSID</string>
+<key>DisplayIcon</key>
+<string>/Library/TechItOut/TIOLogo.png</string>
+<key>DefaultDefer</key>
+<string>3600</string>
+<key>DisplayRedraw</key>
+<string>20</string>
+<key>DisplayTimeout</key>
+<string>300</string>
+<key>FocusCount</key>
+<string>3</string>
+<key>FocusDefer</key>
+<string>3600</string>
+<key>HardCount</key>
+<string>5</string>
+<key>MenuDefer</key>
+<string>300,1800,3600,86400</string>
+<key>RecheckDefer</key>
+<string>120</string>
+</dict>
+</plist>
+Go ahead and scope this profile to the computers you want to target. Note: If you want your computers to upgrade to the latest OS supported by the hardware, include the following in your plist:
+
+<key>AllowUpgrade</key>
+<true/>
